@@ -8,6 +8,5 @@ class Kalk < Formula
 
   def install
     bin.install "kalk"
-    bin.cp Dir['*.dylib*']
   end
 end
