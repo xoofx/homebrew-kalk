@@ -9,6 +9,5 @@ class Kalk < Formula
   def install
     bin.install "kalk"
     cp Dir["*.dylib*"], bin
-    system "install_name_tool", "-change", "libtest.dylib", "@loader_path/../lib/libtest.dylib", "myapp"
   end
 end
