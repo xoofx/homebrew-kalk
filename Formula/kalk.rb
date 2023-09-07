@@ -2,12 +2,12 @@
 class Kalk < Formula
   desc "kalk is a command line calculator app for developers."
   homepage "https://github.com/xoofx/kalk"
-  version "0.8.1"
+  version "0.9.0"
   license "BSD-2-Clause"
   on_macos do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xoofx/kalk/releases/download/0.8.1/kalk.0.8.1.osx-x64.tar.gz"
-      sha256 "691b8e5e533118cea5254f21678d7f014cc78cc0a28414a23ac0cf51c724e01b"
+      url "https://github.com/xoofx/kalk/releases/download/0.9.0/kalk.0.9.0.osx-x64.tar.gz"
+      sha256 "18e4b9024f8b925d9aec371736367d2d9cc3e87e82989de1b9fb5a5c6957930f"
 
       def install
         cp_r '.', bin
@@ -15,8 +15,8 @@ class Kalk < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xoofx/kalk/releases/download/0.8.1/kalk.0.8.1.osx-arm64.tar.gz"
-      sha256 "dc774e1aafaa2350192160b157ba664d333e9987218a49cbbbbf0a7650281733"
+      url "https://github.com/xoofx/kalk/releases/download/0.9.0/kalk.0.9.0.osx-arm64.tar.gz"
+      sha256 "d22942aee747ad2b04157f1ab4addc348f0292fd6c1fc51265815ee547c5fc57"
 
       def install
         cp_r '.', bin
@@ -26,8 +26,8 @@ class Kalk < Formula
   end
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xoofx/kalk/releases/download/0.8.1/kalk.0.8.1.linux-x64.tar.gz"
-      sha256 "1a54637b1b968eae9016d0e070ecf9995cc1df28d952f57a5f0c7dbedb0e2045"
+      url "https://github.com/xoofx/kalk/releases/download/0.9.0/kalk.0.9.0.linux-x64.tar.gz"
+      sha256 "f5214968b0ed3d9bab3f175f1c6c986d6f30936484388177f2799b1274da6d18"
 
       def install
         cp_r '.', bin
@@ -35,8 +35,8 @@ class Kalk < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_32_bit?
-      url "https://github.com/xoofx/kalk/releases/download/0.8.1/kalk.0.8.1.linux-arm.tar.gz"
-      sha256 "63a4ae59c5d67ba400325d7a44297903a799300d74cd93dc78ae3d5158e8374c"
+      url "https://github.com/xoofx/kalk/releases/download/0.9.0/kalk.0.9.0.linux-arm.tar.gz"
+      sha256 "4b1a707e5a785f4e33236d9b35496a008e2ec8dc068b436fa04ad160d3cc27cb"
 
       def install
         cp_r '.', bin
@@ -44,8 +44,8 @@ class Kalk < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/xoofx/kalk/releases/download/0.8.1/kalk.0.8.1.linux-arm64.tar.gz"
-      sha256 "087f5d0f2f855f76c4e62ed25291c4e0204cf83c38bad2d8d457ebf233ce40e7"
+      url "https://github.com/xoofx/kalk/releases/download/0.9.0/kalk.0.9.0.linux-arm64.tar.gz"
+      sha256 "14289498ce3e1e13d726084d954afb0187db51d86db6e882fb04052d198c2c13"
 
       def install
         cp_r '.', bin
